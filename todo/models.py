@@ -8,6 +8,7 @@ class ToDo(models.Model):
     pickup_location=models.TextField(max_length=50)
     dropoff_location=models.TextField(max_length=50)
     date=models.DateField()
+    description=models.TextField()
     completed=models.BooleanField()
     
     def __str__(self):
