@@ -1,0 +1,10 @@
+from django.shortcuts import render
+
+# Create your views here.
+from rest_framework import viewsets
+from .serializers import todoSerializers
+from .models import ToDo
+
+class Tasks(viewsets.ModelViewSet):
+    queryset=ToDo.objects.all().order_by('name')
+    serializer_class=todoSerializers
