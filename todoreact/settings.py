@@ -60,7 +60,8 @@ ROOT_URLCONF = 'todoreact.urls'
 
 
 CORS_ORIGIN_WHITELIST = [
-     'https://tasks.nyihtun.ml/'
+     'https://tasks.nyihtun.ml/',
+     'https://task-client.netlify.app/'
 ]
 
 TEMPLATES = [
