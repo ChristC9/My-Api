@@ -6,5 +6,5 @@ from .serializers import todoSerializers
 from .models import ToDo
 
 class Tasks(viewsets.ModelViewSet):
-    queryset=ToDo.objects.all().order_by('name')
+    queryset=ToDo.objects.all()
     serializer_class=todoSerializers
